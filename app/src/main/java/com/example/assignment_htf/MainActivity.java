@@ -10,12 +10,5 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        //sohai
-        //sohai2
-        //sohai3
-        //sohai4
-        //sohai5
-        //waikit chaohai
     }
 }
