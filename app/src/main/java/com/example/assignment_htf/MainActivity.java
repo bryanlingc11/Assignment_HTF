@@ -18,5 +18,6 @@ public class MainActivity extends AppCompatActivity {
         //sohai5
         //waikit chaohai
         //zhiwei sabi
+        //zhi wei jibai handsome
     }
 }
