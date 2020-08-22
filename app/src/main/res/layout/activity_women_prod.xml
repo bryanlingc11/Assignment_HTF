@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WomenProdActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Women"
+        android:textIsSelectable="false"
+        android:textSize="22sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ScrollView
+
+        android:id="@+id/scrollViewWomen"
+        android:layout_width="396dp"
+        android:layout_height="703dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:orientation="vertical"
+            android:rowCount="4">
+
+            <Button
+                android:id="@+id/womenprod1"
+                android:layout_width="161dp"
+                android:layout_height="200dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginBottom="40dp"
+                android:background="@drawable/hmgoepprod"
+                android:onClick="showImage"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/title" />
+
+            <Button
+                android:id="@+id/womenprod2"
+                android:layout_width="161dp"
+                android:layout_height="200dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginBottom="40dp"
+                android:background="@drawable/hmgoepprod__1_"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/womenprod1"
+                app:layout_constraintTop_toBottomOf="@+id/title" />
+
+            <Button
+                android:id="@+id/womenprod3"
+                android:layout_width="161dp"
+                android:layout_height="200dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginBottom="40dp"
+                android:background="@drawable/hmgoepprod__2_"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/womenprod1" />
+
+            <Button
+                android:id="@+id/womenprod4"
+                android:layout_width="161dp"
+                android:layout_height="200dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginBottom="40dp"
+                android:background="@drawable/hmgoepprod__3_"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/womenprod3"
+                app:layout_constraintTop_toBottomOf="@+id/womenprod2" />
+
+            <Button
+                android:id="@+id/womenprod5"
+                android:layout_width="161dp"
+                android:layout_height="200dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginRight="18dp"
+                android:layout_marginBottom="40dp"
+                android:background="@drawable/hmgoepprod__4_"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/womenprod3" />
+
+            <Button
+                android:id="@+id/womenprod6"
+                android:layout_width="161dp"
+                android:layout_height="200dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginRight="18dp"
+                android:layout_marginBottom="40dp"
+                android:background="@drawable/hmgoepprod__5_"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/womenprod5"
+                app:layout_constraintTop_toBottomOf="@+id/womenprod4" />
+
+            <Button
+                android:id="@+id/womenprod7"
+                android:layout_width="161dp"
+                android:layout_height="200dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginRight="18dp"
+                android:layout_marginBottom="40dp"
+                android:background="@drawable/hmgoepprod__6_"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/womenprod5" />
+
+            <Button
+                android:id="@+id/womenprod8"
+                android:layout_width="161dp"
+                android:layout_height="200dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginRight="18dp"
+                android:layout_marginBottom="40dp"
+                android:background="@drawable/hmgoepprod__7_"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/womenprod7"
+                app:layout_constraintTop_toBottomOf="@+id/womenprod6" />
+
+            <TextView
+                android:id="@+id/nameWomenProd1"
+                android:layout_width="161dp"
+                android:layout_height="20dp"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="145dp"
+                android:text="@string/NameWomenProd1"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/womenprod1" />
+
+            <TextView
+                android:id="@+id/priceWomenProd1"
+                android:layout_width="161dp"
+                android:layout_height="25dp"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="165dp"
+                android:text="@string/PriceWomenProd1"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/nameWomenProd1" />
+
+            <TextView
+                android:id="@+id/nameWomenProd2"
+                android:layout_width="161dp"
+                android:layout_height="25dp"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="145dp"
+                android:text="@string/NameWomenProd2"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/womenprod2" />
+
+            <TextView
+                android:id="@+id/priceWomenProd2"
+                android:layout_width="161dp"
+                android:layout_height="25dp"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="165dp"
+                android:text="@string/PriceWomenProd2"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/nameWomenProd2" />
+
+            <TextView
+                android:id="@+id/nameWomenProd3"
+                android:layout_width="161dp"
+                android:layout_height="25dp"
+                android:layout_row="2"
+                android:layout_column="0"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="145dp"
+                android:text="@string/NameWomenProd3"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/womenprod3" />
+
+            <TextView
+                android:id="@+id/priceWomenProd3"
+                android:layout_width="161dp"
+                android:layout_height="25dp"
+                android:layout_row="2"
+                android:layout_column="0"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="165dp"
+                android:text="@string/PriceWomenProd3"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/nameWomenProd3" />
+
+            <TextView
+                android:id="@+id/nameWomenProd4"
+                android:layout_width="161dp"
+                android:layout_height="25dp"
+                android:layout_row="3"
+                android:layout_column="0"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="145dp"
+                android:text="@string/NameWomenProd4"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/womenprod4" />
+
+            <TextView
+                android:id="@+id/priceWomenProd4"
+                android:layout_width="161dp"
+                android:layout_height="20dp"
+                android:layout_row="3"
+                android:layout_column="0"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="165dp"
+                android:text="@string/PriceWomenProd4"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/nameWomenProd4" />
+
+            <TextView
+                android:id="@+id/nameWomenProd5"
+                android:layout_width="161dp"
+                android:layout_height="20dp"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="145dp"
+                android:text="@string/NameWomenProd5"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/womenprod5" />
+
+            <TextView
+                android:id="@+id/priceWomenProd5"
+                android:layout_width="161dp"
+                android:layout_height="20dp"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="165dp"
+                android:text="@string/PriceWomenProd5"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/nameWomenProd5" />
+
+            <TextView
+                android:id="@+id/nameWomenProd6"
+                android:layout_width="161dp"
+                android:layout_height="25dp"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="145dp"
+                android:text="@string/NameWomenProd6"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/womenprod6" />
+
+            <TextView
+                android:id="@+id/priceWomenProd6"
+                android:layout_width="161dp"
+                android:layout_height="20dp"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="165dp"
+                android:text="@string/PriceWomenProd6"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/nameWomenProd6" />
+
+            <TextView
+                android:id="@+id/nameWomenProd7"
+                android:layout_width="161dp"
+                android:layout_height="20dp"
+                android:layout_row="2"
+                android:layout_column="1"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="145dp"
+                android:text="@string/NameWomenProd7"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/womenprod7" />
+
+            <TextView
+                android:id="@+id/priceWomenProd7"
+                android:layout_width="161dp"
+                android:layout_height="20dp"
+                android:layout_row="2"
+                android:layout_column="1"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="165dp"
+                android:text="@string/PriceWomenProd7"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/nameWomenProd7" />
+
+            <TextView
+                android:id="@+id/nameWomenProd8"
+                android:layout_width="161dp"
+                android:layout_height="20dp"
+                android:layout_row="3"
+                android:layout_column="1"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="145dp"
+                android:text="@string/NameWomenProd8"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/womenprod8" />
+
+            <TextView
+                android:id="@+id/priceWomenProd8"
+                android:layout_width="161dp"
+                android:layout_height="20dp"
+                android:layout_row="3"
+                android:layout_column="1"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="165dp"
+                android:text="@string/PriceWomenProd8"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/nameWomenProd8" />
+        </GridLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

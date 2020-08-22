@@ -4,4 +4,59 @@
     <string name="product_icon">Product</string>
     <string name="cart_icon">Cart</string>
     <string name="account_icon">Account</string>
+    <!--    Women Product-->
+    <string name="NameWomenProd1">Crinkled Blouse</string>
+    <string name="PriceWomenProd1">RM49.90</string>
+    <string name="NameWomenProd2">Pin-Tuck Boluse</string>
+    <string name="PriceWomenProd2">RM69.90</string>
+    <string name="NameWomenProd3">Collar-details T-shirt</string>
+    <string name="PriceWomenProd3">RM49.90</string>
+    <string name="NameWomenProd4">Satin Blouse</string>
+    <string name="NameWomenProd5">Linean Blouse</string>
+    <string name="PriceWomenProd4">RM59.90</string>
+    <string name="PriceWomenProd5">RM39.90</string>
+    <string name="NameWomenProd6">Oversize Shirt</string>
+    <string name="NameWomenProd7">Cotton Puff-sleeved Blouse</string>
+    <string name="PriceWomenProd7">RM59.90</string>
+    <string name="NameWomenProd8">Scallop-trimmed Camisole Top</string>
+    <string name="PriceWomenProd8">RM59.90</string>
+    <string name="PriceWomenProd6">RM49.90</string>
+    <!--    //Men Product-->
+    <string name="NameMenProd1">Printed Jersey Shirt</string>
+    <string name="NameMenProd2">Printed Jersey Shirt</string>
+    <string name="PriceMenProd2">RM39.90</string>
+    <string name="NameMenProd3">Hoodie</string>
+    <string name="PriceMenProd3">RM79.90</string>
+    <string name="NameMenProd4">White Hoodie</string>
+    <string name="PriceMenProd4">RM79.90</string>
+    <string name="NameMenProd5">Dark Hoodie</string>
+    <string name="PriceMenProd5">RM79.90</string>
+    <string name="NameMenProd6">X Hoodie</string>
+    <string name="PriceMenProd6">RM79.90</string>
+    <string name="NameMenProd7">Printed T-Shirt</string>
+    <string name="PriceMenProd7">RM39.90</string>
+    <string name="NameMenProd8">Printed T-shirt</string>
+    <string name="PriceMenProd8">RM39.90</string>
+    <string name="PriceMenProd1">RM59.90</string>
+    <!--    //Kids Product-->
+    <string name="NameKidProd1">Junior black Jacket</string>
+    <string name="PriceKidProd1">RM49.90</string>
+    <string name="NameKidProd2">Junior White Jacket</string>
+    <string name="PriceKidProd2">RM49.90</string>
+    <string name="NameKidProd3">Junior T-Shirt</string>
+    <string name="PriceKidProd3">RM29.90</string>
+    <string name="NameKidProd4">Junior Pink Dress</string>
+    <string name="PriceKidProd4">RM39.90</string>
+    <string name="NameKidProd5">Junior SweatShirt</string>
+    <string name="PriceKidProd5">RM49.90</string>
+    <string name="NameKidProd6">Mickey Mouse Dress</string>
+    <string name="PriceKidProd6">RM49.90</string>
+    <string name="NameKidProd7">Junior Orange Jacket</string>
+    <string name="PriceKidProd7">RM49.90</string>
+    <string name="NameKidProd8">Junior Zebra Jacket</string>
+    <string name="PriceKidProd8">RM49.90</string>
+
+    <string name="send_message">Sent Sucessfully</string>
+    <string name="Name">Name</string>
+    <string name="price">Price</string>
 </resources>
