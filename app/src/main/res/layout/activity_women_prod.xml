@@ -7,27 +7,26 @@
     tools:context=".WomenProdActivity">
 
     <TextView
-        android:id="@+id/title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/txtTile"
+        android:layout_width="70dp"
+        android:layout_height="34dp"
         android:text="Women"
-        android:textIsSelectable="false"
-        android:textSize="22sp"
-        android:textStyle="italic"
+        android:textAlignment="center"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-
     <ScrollView
 
         android:id="@+id/scrollViewWomen"
-        android:layout_width="396dp"
-        android:layout_height="703dp"
+        android:layout_width="410dp"
+        android:layout_height="555dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/title">
+        app:layout_constraintTop_toTopOf="parent">
 
         <GridLayout
             android:layout_width="match_parent"
@@ -44,9 +43,9 @@
                 android:layout_marginTop="18dp"
                 android:layout_marginBottom="40dp"
                 android:background="@drawable/hmgoepprod"
-                android:onClick="showImage"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/title" />
+
 
             <Button
                 android:id="@+id/womenprod2"
@@ -356,8 +355,27 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/nameWomenProd8" />
+
+
         </GridLayout>
 
     </ScrollView>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        app:itemBackground="@color/colorPrimary"
+        app:itemIconTint="@android:color/white"
+        app:itemTextColor="@android:color/white"
+        app:labelVisibilityMode="labeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:menu="@menu/bottom_nav_menu" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,5 +1,6 @@
 package com.example.assignment_htf;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -38,5 +39,8 @@ private Button button;
                 startActivity(new Intent(ProductHomePageActivity.this,KidProdActivity.class));
             }
         });
+
+        ActionBar actionBar=getSupportActionBar();
+        actionBar.hide();
     }
 }

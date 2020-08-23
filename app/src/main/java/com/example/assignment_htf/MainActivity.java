@@ -1,5 +1,6 @@
 package com.example.assignment_htf;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -17,8 +18,11 @@ private Button button;
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this,WomenProdActivity.class));
+                startActivity(new Intent(MainActivity.this,ProductHomePageActivity.class));
             }
         });
+
+        ActionBar actionBar=getSupportActionBar();
+        actionBar.hide();
     }
 }
