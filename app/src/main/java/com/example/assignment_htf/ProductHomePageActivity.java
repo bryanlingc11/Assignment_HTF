@@ -15,6 +15,11 @@ private Button button;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_product_home_page);
 
+        ActionBar actionBar=getSupportActionBar();
+        actionBar.hide();
+    }
+
+    public void womenProd(View view){
         button=(Button) findViewById(R.id.btnWomen);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -22,7 +27,9 @@ private Button button;
                 startActivity(new Intent(ProductHomePageActivity.this,WomenProdActivity.class));
             }
         });
+    }
 
+    public void menProd(View view){
         button=(Button) findViewById(R.id.btnMen);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -30,7 +37,9 @@ private Button button;
                 startActivity(new Intent(ProductHomePageActivity.this,MenProdActivity.class));
             }
         });
+    }
 
+    public void kidProd(View view){
 
         button=(Button) findViewById(R.id.btnKid);
         button.setOnClickListener(new View.OnClickListener() {
@@ -39,8 +48,7 @@ private Button button;
                 startActivity(new Intent(ProductHomePageActivity.this,KidProdActivity.class));
             }
         });
-
-        ActionBar actionBar=getSupportActionBar();
-        actionBar.hide();
     }
+
+
 }

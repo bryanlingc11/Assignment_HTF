@@ -28,6 +28,8 @@
         android:layout_marginBottom="20dp"
         android:textAlignment="textEnd"
         android:textSize="25sp"
+        android:padding="30dp"
+        android:onClick="womenProd"
         app:layout_constraintTop_toBottomOf="@+id/txtTile"
         tools:layout_editor_absoluteX="84dp" />
 
@@ -40,7 +42,9 @@
         android:text="Men"
         android:background="@drawable/mask_group_3"
         android:textAlignment="textStart"
+        android:padding="30dp"
         android:textSize="25sp"
+        android:onClick="menProd"
         app:layout_constraintTop_toBottomOf="@+id/btnWomen"
         tools:layout_editor_absoluteX="47dp" />
 
@@ -54,6 +58,8 @@
         android:text="Kids"
         android:textAlignment="textStart"
         android:textSize="25sp"
+        android:padding="30dp"
+        android:onClick="kidProd"
         app:layout_constraintTop_toBottomOf="@+id/btnMen"
         tools:layout_editor_absoluteX="16dp" />
 
