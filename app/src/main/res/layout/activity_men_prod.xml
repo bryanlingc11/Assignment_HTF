@@ -21,12 +21,13 @@
 
         android:id="@+id/scrollViewMen"
         android:layout_width="410dp"
-        android:layout_height="555dp"
+        android:layout_height="520dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.425">
 
         <GridLayout
             android:layout_width="match_parent"
@@ -35,82 +36,6 @@
             android:orientation="vertical"
             android:rowCount="4">
 
-<!--            <Button-->
-<!--                android:id="@+id/menProd1"-->
-<!--                android:layout_width="161dp"-->
-<!--                android:layout_height="200dp"-->
-<!--                android:layout_marginStart="25dp"-->
-<!--                android:layout_marginTop="18dp"-->
-<!--                android:layout_marginBottom="40dp"-->
-<!--                android:background="@drawable/men1"/>-->
-
-
-<!--            <Button-->
-<!--                android:id="@+id/menProd2"-->
-<!--                android:layout_width="161dp"-->
-<!--                android:layout_height="200dp"-->
-<!--                android:layout_marginLeft="25dp"-->
-<!--                android:layout_marginTop="18dp"-->
-<!--                android:layout_marginBottom="40dp"-->
-<!--                android:background="@drawable/men2"/>-->
-
-<!--            <Button-->
-<!--                android:id="@+id/menProd3"-->
-<!--                android:layout_width="161dp"-->
-<!--                android:layout_height="200dp"-->
-<!--                android:layout_marginLeft="25dp"-->
-<!--                android:layout_marginTop="18dp"-->
-<!--                android:layout_marginBottom="40dp"-->
-<!--                android:background="@drawable/men3"/>-->
-
-<!--            <Button-->
-<!--                android:id="@+id/menProd4"-->
-<!--                android:layout_width="161dp"-->
-<!--                android:layout_height="200dp"-->
-<!--                android:layout_marginLeft="25dp"-->
-<!--                android:layout_marginTop="18dp"-->
-<!--                android:layout_marginBottom="40dp"-->
-<!--                android:background="@drawable/men4" />-->
-
-<!--            <Button-->
-<!--                android:id="@+id/menProd5"-->
-<!--                android:layout_width="161dp"-->
-<!--                android:layout_height="200dp"-->
-<!--                android:layout_marginLeft="25dp"-->
-<!--                android:layout_marginTop="18dp"-->
-<!--                android:layout_marginRight="18dp"-->
-<!--                android:layout_marginBottom="40dp"-->
-<!--                android:background="@drawable/men5" />-->
-
-<!--            <Button-->
-<!--                android:id="@+id/menProd6"-->
-<!--                android:layout_width="161dp"-->
-<!--                android:layout_height="200dp"-->
-<!--                android:layout_marginLeft="25dp"-->
-<!--                android:layout_marginTop="18dp"-->
-<!--                android:layout_marginRight="18dp"-->
-<!--                android:layout_marginBottom="40dp"-->
-<!--                android:background="@drawable/men6"/>-->
-
-<!--            <Button-->
-<!--                android:id="@+id/menProd7"-->
-<!--                android:layout_width="161dp"-->
-<!--                android:layout_height="200dp"-->
-<!--                android:layout_marginLeft="25dp"-->
-<!--                android:layout_marginTop="18dp"-->
-<!--                android:layout_marginRight="18dp"-->
-<!--                android:layout_marginBottom="40dp"-->
-<!--                android:background="@drawable/men7"/>-->
-
-<!--            <Button-->
-<!--                android:id="@+id/menProd8"-->
-<!--                android:layout_width="161dp"-->
-<!--                android:layout_height="200dp"-->
-<!--                android:layout_marginLeft="25dp"-->
-<!--                android:layout_marginTop="18dp"-->
-<!--                android:layout_marginRight="18dp"-->
-<!--                android:layout_marginBottom="40dp"-->
-<!--                android:background="@drawable/men8" />-->
             <Button
                 android:id="@+id/menprod1"
                 android:layout_width="161dp"
@@ -220,8 +145,8 @@
                 android:text="@string/NameMenProd1"
                 android:textAlignment="center"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="parent"/>
-<!--                app:layout_constraintTop_toBottomOf="@+id/menprod1" />-->
+                app:layout_constraintStart_toEndOf="parent" />
+            <!--                app:layout_constraintTop_toBottomOf="@+id/menprod1" />-->
 
             <TextView
                 android:id="@+id/priceMenProd1"
@@ -247,7 +172,7 @@
                 android:text="@string/NameMenProd2"
                 android:textAlignment="center"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="parent"/>
+                app:layout_constraintStart_toEndOf="parent" />
 
             <TextView
                 android:id="@+id/priceMenProd2"
@@ -312,7 +237,7 @@
                 android:text="@string/PriceMenProd4"
                 android:textAlignment="center"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="parent"/>
+                app:layout_constraintStart_toEndOf="parent" />
 
             <TextView
                 android:id="@+id/nameMenProd5"
@@ -325,7 +250,7 @@
                 android:text="@string/NameMenProd5"
                 android:textAlignment="center"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="parent"/>
+                app:layout_constraintStart_toEndOf="parent" />
 
             <TextView
                 android:id="@+id/priceMenProd5"
@@ -377,7 +302,7 @@
                 android:text="@string/NameMenProd7"
                 android:textAlignment="center"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="parent"/>
+                app:layout_constraintStart_toEndOf="parent" />
 
             <TextView
                 android:id="@+id/priceMenProd7"
@@ -421,6 +346,7 @@
         </GridLayout>
 
     </ScrollView>
+
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"
         android:layout_width="match_parent"

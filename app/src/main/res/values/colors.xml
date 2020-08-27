@@ -4,4 +4,6 @@
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
     <color name="background">#95B9C7</color>
+    <color name="Scroll"> #C2DFFF</color>
+    <color name="ScrollView"> #E0FFFF</color>
 </resources>
