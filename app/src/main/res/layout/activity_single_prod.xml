@@ -38,7 +38,7 @@
                 android:orientation="vertical" >
 
                 <ImageView
-                    android:id="@+id/imageProduct"
+                    android:id="@+id/rImageView2"
                     android:layout_width="228dp"
                     android:layout_height="250dp"
                     android:layout_marginLeft="80dp" />
@@ -57,7 +57,7 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/txtName"
+                    android:id="@+id/name2"
                     android:layout_width="match_parent"
                     android:layout_height="86dp"
                     android:text="@string/Name"
@@ -65,7 +65,7 @@
                     android:textStyle="italic" />
 
                 <TextView
-                    android:id="@+id/txtPrice"
+                    android:id="@+id/price2"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:text="@string/price"

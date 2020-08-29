@@ -7,365 +7,32 @@
     tools:context=".KidProdActivity">
 
     <TextView
-        android:id="@+id/txtTile"
+        android:id="@+id/textView2"
         android:layout_width="70dp"
-        android:layout_height="34dp"
-        android:text="Kids"
+        android:layout_height="30dp"
+        android:text="Kid"
         android:textAlignment="center"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ScrollView
-
-        android:id="@+id/scrollViewKid"
-        android:layout_width="410dp"
-        android:layout_height="520dp"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyelerview"
+        android:layout_width="408dp"
+        android:layout_height="500dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.333"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.408">
-
-        <GridLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:columnCount="2"
-            android:orientation="vertical"
-            android:rowCount="4">
-
-            <Button
-                android:id="@+id/kidprod1"
-                android:layout_width="161dp"
-                android:layout_height="200dp"
-                android:layout_marginStart="25dp"
-                android:layout_marginTop="18dp"
-                android:layout_marginBottom="40dp"
-                android:background="@drawable/kid"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/title" />
-
-
-            <Button
-                android:id="@+id/kidprod2"
-                android:layout_width="161dp"
-                android:layout_height="200dp"
-                android:layout_marginLeft="25dp"
-                android:layout_marginTop="18dp"
-                android:layout_marginBottom="40dp"
-                android:background="@drawable/kid1"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/womenprod1"
-                app:layout_constraintTop_toBottomOf="@+id/title" />
-
-            <Button
-                android:id="@+id/kidprod3"
-                android:layout_width="161dp"
-                android:layout_height="200dp"
-                android:layout_marginLeft="25dp"
-                android:layout_marginTop="18dp"
-                android:layout_marginBottom="40dp"
-                android:background="@drawable/kid2"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/womenprod1" />
-
-            <Button
-                android:id="@+id/kidprod4"
-                android:layout_width="161dp"
-                android:layout_height="200dp"
-                android:layout_marginLeft="25dp"
-                android:layout_marginTop="18dp"
-                android:layout_marginBottom="40dp"
-                android:background="@drawable/kid3"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/womenprod3"
-                app:layout_constraintTop_toBottomOf="@+id/womenprod2" />
-
-            <Button
-                android:id="@+id/kidprod5"
-                android:layout_width="161dp"
-                android:layout_height="200dp"
-                android:layout_marginLeft="25dp"
-                android:layout_marginTop="18dp"
-                android:layout_marginRight="18dp"
-                android:layout_marginBottom="40dp"
-                android:background="@drawable/kid4"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/womenprod3" />
-
-            <Button
-                android:id="@+id/kidprod6"
-                android:layout_width="161dp"
-                android:layout_height="200dp"
-                android:layout_marginLeft="25dp"
-                android:layout_marginTop="18dp"
-                android:layout_marginRight="18dp"
-                android:layout_marginBottom="40dp"
-                android:background="@drawable/kid5"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/womenprod5"
-                app:layout_constraintTop_toBottomOf="@+id/womenprod4" />
-
-            <Button
-                android:id="@+id/kidprod7"
-                android:layout_width="161dp"
-                android:layout_height="200dp"
-                android:layout_marginLeft="25dp"
-                android:layout_marginTop="18dp"
-                android:layout_marginRight="18dp"
-                android:layout_marginBottom="40dp"
-                android:background="@drawable/kid6"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/womenprod5" />
-
-            <Button
-                android:id="@+id/kidprod8"
-                android:layout_width="161dp"
-                android:layout_height="200dp"
-                android:layout_marginLeft="25dp"
-                android:layout_marginTop="18dp"
-                android:layout_marginRight="18dp"
-                android:layout_marginBottom="40dp"
-                android:background="@drawable/kid7"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/womenprod7"
-                app:layout_constraintTop_toBottomOf="@+id/womenprod6" />
-
-
-            <TextView
-                android:id="@+id/nameKidProd1"
-                android:layout_width="161dp"
-                android:layout_height="20dp"
-                android:layout_row="0"
-                android:layout_column="0"
-                android:layout_marginLeft="25dp"
-                android:layout_marginTop="145dp"
-                android:text="@string/NameKidProd1"
-                android:textAlignment="center"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/menprod1" />
-
-            <TextView
-                android:id="@+id/priceKidProd1"
-                android:layout_width="161dp"
-                android:layout_height="25dp"
-                android:layout_row="0"
-                android:layout_column="0"
-                android:layout_marginLeft="25dp"
-                android:layout_marginTop="165dp"
-                android:text="@string/PriceKidProd1"
-                android:textAlignment="center"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/nameMenProd1" />
-
-            <TextView
-                android:id="@+id/nameKidProd2"
-                android:layout_width="161dp"
-                android:layout_height="25dp"
-                android:layout_row="1"
-                android:layout_column="0"
-                android:layout_marginLeft="25dp"
-                android:layout_marginTop="145dp"
-                android:text="@string/NameKidProd2"
-                android:textAlignment="center"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/menprod2" />
-
-            <TextView
-                android:id="@+id/priceKidProd2"
-                android:layout_width="161dp"
-                android:layout_height="25dp"
-                android:layout_row="1"
-                android:layout_column="0"
-                android:layout_marginLeft="25dp"
-                android:layout_marginTop="165dp"
-                android:text="@string/PriceKidProd2"
-                android:textAlignment="center"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/nameMenProd2" />
-
-            <TextView
-                android:id="@+id/nameKidProd3"
-                android:layout_width="161dp"
-                android:layout_height="25dp"
-                android:layout_row="2"
-                android:layout_column="0"
-                android:layout_marginLeft="25dp"
-                android:layout_marginTop="145dp"
-                android:text="@string/NameKidProd3"
-                android:textAlignment="center"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/menprod3" />
-
-            <TextView
-                android:id="@+id/priceKidProd3"
-                android:layout_width="161dp"
-                android:layout_height="25dp"
-                android:layout_row="2"
-                android:layout_column="0"
-                android:layout_marginLeft="25dp"
-                android:layout_marginTop="165dp"
-                android:text="@string/PriceKidProd3"
-                android:textAlignment="center"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/nameMenProd3" />
-
-            <TextView
-                android:id="@+id/nameKidProd4"
-                android:layout_width="161dp"
-                android:layout_height="25dp"
-                android:layout_row="3"
-                android:layout_column="0"
-                android:layout_marginLeft="25dp"
-                android:layout_marginTop="145dp"
-                android:text="@string/NameKidProd4"
-                android:textAlignment="center"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/menprod4" />
-
-            <TextView
-                android:id="@+id/priceKidProd4"
-                android:layout_width="161dp"
-                android:layout_height="20dp"
-                android:layout_row="3"
-                android:layout_column="0"
-                android:layout_marginLeft="25dp"
-                android:layout_marginTop="165dp"
-                android:text="@string/PriceKidProd4"
-                android:textAlignment="center"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/nameMenProd4" />
-
-            <TextView
-                android:id="@+id/nameKidProd5"
-                android:layout_width="161dp"
-                android:layout_height="20dp"
-                android:layout_row="0"
-                android:layout_column="1"
-                android:layout_marginLeft="25dp"
-                android:layout_marginTop="145dp"
-                android:text="@string/NameKidProd5"
-                android:textAlignment="center"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/menprod5" />
-
-            <TextView
-                android:id="@+id/priceKidProd5"
-                android:layout_width="161dp"
-                android:layout_height="20dp"
-                android:layout_row="0"
-                android:layout_column="1"
-                android:layout_marginLeft="25dp"
-                android:layout_marginTop="165dp"
-                android:text="@string/PriceKidProd5"
-                android:textAlignment="center"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/nameMenProd5" />
-
-            <TextView
-                android:id="@+id/nameKidProd6"
-                android:layout_width="161dp"
-                android:layout_height="25dp"
-                android:layout_row="1"
-                android:layout_column="1"
-                android:layout_marginLeft="25dp"
-                android:layout_marginTop="145dp"
-                android:text="@string/NameKidProd6"
-                android:textAlignment="center"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/menprod6" />
-
-            <TextView
-                android:id="@+id/priceKidProd6"
-                android:layout_width="161dp"
-                android:layout_height="20dp"
-                android:layout_row="1"
-                android:layout_column="1"
-                android:layout_marginLeft="25dp"
-                android:layout_marginTop="165dp"
-                android:text="@string/PriceKidProd6"
-                android:textAlignment="center"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/nameMenProd6" />
-
-            <TextView
-                android:id="@+id/nameKidProd7"
-                android:layout_width="161dp"
-                android:layout_height="20dp"
-                android:layout_row="2"
-                android:layout_column="1"
-                android:layout_marginLeft="25dp"
-                android:layout_marginTop="145dp"
-                android:text="@string/NameKidProd7"
-                android:textAlignment="center"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/menprod7" />
-
-            <TextView
-                android:id="@+id/priceKidProd7"
-                android:layout_width="161dp"
-                android:layout_height="20dp"
-                android:layout_row="2"
-                android:layout_column="1"
-                android:layout_marginLeft="25dp"
-                android:layout_marginTop="165dp"
-                android:text="@string/PriceKidProd7"
-                android:textAlignment="center"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/nameMenProd7" />
-
-            <TextView
-                android:id="@+id/nameKidProd8"
-                android:layout_width="161dp"
-                android:layout_height="20dp"
-                android:layout_row="3"
-                android:layout_column="1"
-                android:layout_marginLeft="25dp"
-                android:layout_marginTop="145dp"
-                android:text="@string/NameKidProd8"
-                android:textAlignment="center"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/menprod8" />
-
-            <TextView
-                android:id="@+id/priceKidProd8"
-                android:layout_width="161dp"
-                android:layout_height="20dp"
-                android:layout_row="3"
-                android:layout_column="1"
-                android:layout_marginLeft="25dp"
-                android:layout_marginTop="165dp"
-                android:text="@string/PriceKidProd8"
-                android:textAlignment="center"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/nameMenProd8" />
-
-        </GridLayout>
-
-    </ScrollView>
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.179" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="413dp"
+        android:layout_height="75dp"
         android:layout_alignParentBottom="true"
         android:background="@color/colorPrimary"
         app:itemBackground="@color/colorPrimary"
@@ -377,8 +44,5 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        app:menu="@menu/bottom_nav_menu" />
-
-
+        app:layout_constraintVertical_bias="1.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>
