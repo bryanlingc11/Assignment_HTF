@@ -10,52 +10,28 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-public class ViewHolder extends RecyclerView.ViewHolder {
-    View view;
+public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
-    public ViewHolder(@NonNull View itemView) {
+    public TextView NameProd1, PriceProd1;
+    public  ImageView ImageProd1;
+    public ItemClickListener listener;
+    public  ViewHolder(View itemView)
+    {
         super(itemView);
-        view = itemView;
-
-        itemView.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view)
-            {
-                mClicklistener.onItemclick(view,getAdapterPosition());
-            }
-
-        });
-
-        itemView.setOnLongClickListener(new View.OnLongClickListener(){
-            @Override
-            public boolean onLongClick(View view){
-                mClicklistener.onItemLongclick(view,getAdapterPosition());
-                return false;
-            }
-        });
+        ImageProd1 = (ImageView) itemView.findViewById(R.id.rImageView);
+        NameProd1 = (TextView) itemView.findViewById(R.id.name);
+        PriceProd1 = (TextView) itemView.findViewById(R.id.price);
     }
 
-    public void setdetails(Context context, String NameProd1, String PriceProd1, String ImageProd1){
-        TextView mNameProd1=view.findViewById(R.id.name);
-        TextView mPriceProd1= view.findViewById(R.id.price);
-        ImageView mImageProd1= view.findViewById(R.id.rImageView);
-
-        mNameProd1.setText(NameProd1);
-        mPriceProd1.setText(PriceProd1);
-        Picasso.get().load(ImageProd1).into(mImageProd1);
-
-        Animation animation = AnimationUtils.loadAnimation(context,android.R.anim.slide_in_left);
-        itemView.startAnimation(animation);
+    public void setItemClickListener(ItemClickListener listener)
+    {
+        this.listener=listener;
     }
 
-    private ViewHolder.ClickListener mClicklistener;
-    public interface  ClickListener{
-        void onItemclick(View view, int position);
-        void onItemLongclick(View view, int position);
+    @Override
+    public void onClick(View view)
+    {
+        listener.onClick(view,getAdapterPosition(),false);
     }
-    public void setOnclickListener(ViewHolder.ClickListener clickListener){
-        mClicklistener= clickListener;
-    }
-
 
 }

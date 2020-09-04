@@ -1,12 +1,16 @@
 package com.example.assignment_htf;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
@@ -30,58 +34,41 @@ public class KidProdActivity extends AppCompatActivity {
     }
 
     @Override
-    protected  void onStart() {
+    protected void onStart() {
         super.onStart();
 
-        FirebaseRecyclerAdapter<Member, ViewHolder> firebaseRecyclerAdapter =
-                new FirebaseRecyclerAdapter<Member, ViewHolder>(
-                        Member.class,
-                        R.layout.image,
-                        ViewHolder.class,
-                        reference
-                ) {
-                    @Override
-                    protected void populateViewHolder(ViewHolder viewHolder, Member member, int i) {
-                        viewHolder.setdetails(getApplicationContext(), member.getNameProd(), member.getPriceProd(), member.getImageProd());
-                    }
+        FirebaseRecyclerOptions<Member> options =
+                new FirebaseRecyclerOptions.Builder<Member>()
+                        .setQuery(reference,Member.class)
+                        .build();
 
+        FirebaseRecyclerAdapter<Member,ViewHolder> adapter =
+                new FirebaseRecyclerAdapter<Member, ViewHolder>(options) {
                     @Override
-                    public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-                        ViewHolder viewHolder = super.onCreateViewHolder(parent, viewType);
-                        viewHolder.setOnclickListener(new ViewHolder.ClickListener() {
+                    protected void onBindViewHolder(@NonNull ViewHolder holder, int position, @NonNull final Member model) {
+                        holder.NameProd1.setText(model.getNameProd1());
+                        holder.PriceProd1.setText(model.getPriceProd1());
+                        Picasso.get().load(model.getImageProd1()).into(holder.ImageProd1);
+
+                        holder.itemView.setOnClickListener(new View.OnClickListener() {
                             @Override
-                            public void onItemclick(View view, int position) {
-                                TextView mname = view.findViewById(R.id.name);
-                                TextView mprice = view.findViewById(R.id.price);
-                                ImageView mimageView = view.findViewById(R.id.rImageView);
-
-                                String name = mname.getText().toString();
-                                String price = mprice.getText().toString();
-                                Drawable mDrawable = mimageView.getDrawable();
-                                Bitmap mBitmap = ((BitmapDrawable) mDrawable).getBitmap();
-                                Intent intent = new Intent(view.getContext(), SingleProdActivity.class);
-                                ByteArrayOutputStream stream = new ByteArrayOutputStream();
-                                mBitmap.compress(Bitmap.CompressFormat.PNG, 100, stream);
-                                byte[] bytes = stream.toByteArray();
-
-                                intent.putExtra("ImageProd", bytes);
-                                intent.putExtra("NameProd", name);
-                                intent.putExtra("PriceProd", price);
+                            public void onClick(View view) {
+                                Intent intent = new Intent(KidProdActivity.this,SingleProdActivity.class);
+                                intent.putExtra("prodID",model.getProdID());
                                 startActivity(intent);
-
-                            }
-
-                            @Override
-                            public void onItemLongclick(View view, int position) {
-
                             }
                         });
+                    }
 
+                    @NonNull
+                    @Override
+                    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+                        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.image,parent,false);
+                        ViewHolder viewHolder = new ViewHolder(view);
                         return viewHolder;
                     }
                 };
-
-
-        mRecyclerView.setAdapter(firebaseRecyclerAdapter);
+        mRecyclerView.setAdapter(adapter);
+        adapter.startListening();
     }
 }
